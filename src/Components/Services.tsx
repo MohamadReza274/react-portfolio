@@ -20,7 +20,7 @@ const Card = ({
   return (
     <div
       className={classNames(
-        "rounded-sm flex flex-col justify-center p-12 max-w-[26rem] md:max-w-[18rem]  gap-y-4 w-full items-center hover:bg-primary hover:text-black transition-colors ease-in-out duration-150",
+        "rounded-md flex flex-col justify-center p-12 max-w-[26rem] md:max-w-md transform hover:scale-105 transition-transform duration-200  gap-y-4 w-full items-center ",
         className
       )}
     >

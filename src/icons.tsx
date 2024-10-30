@@ -1,5 +1,3 @@
-import { SVGProps } from "react";
-
 export const LinkedInIcon = (
   props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
 ) => {

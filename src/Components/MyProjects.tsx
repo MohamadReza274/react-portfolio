@@ -3,25 +3,32 @@ import { classNames } from "../utils";
 import Gamehub from "../assets/gamehub.png";
 import Todolist from "../assets/todolist.png";
 import ProductDetail from "../assets/product.png";
+import Dashboard from "../assets/dashboard.png";
 import Container from "./Container";
 
 const cartItems = [
   {
     id: 1,
+    title: "Dashboard for MIS system with Reactjs, Typescript, TailwindCSS",
+    thumbnail: Dashboard,
+    url: "https://dashboard-mocha-psi-42.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Game Hub Website With React, TS",
     category: "Web Development",
     thumbnail: Gamehub,
     url: "https://game-hub-react-lyart.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Todo List With React useReducer",
     category: "Web Development",
     thumbnail: Todolist,
     url: "https://todo-reducer-three.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Product Page with React TS",
     category: "Web Development",
     thumbnail: ProductDetail,
