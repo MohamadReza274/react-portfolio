@@ -15,22 +15,22 @@ const cartItems = [
   },
   {
     id: 2,
-    title: "Game Hub Website With React, TS",
-    category: "Web Development",
+    title: "Game Hub Website With React, TypeScript, Zustand, React-query",
+
     thumbnail: Gamehub,
     url: "https://game-hub-react-lyart.vercel.app/",
   },
   {
     id: 3,
     title: "Todo List With React useReducer",
-    category: "Web Development",
+
     thumbnail: Todolist,
     url: "https://todo-reducer-three.vercel.app/",
   },
   {
     id: 4,
-    title: "Product Page with React TS",
-    category: "Web Development",
+    title: "Product Page with React TypeScript",
+
     thumbnail: ProductDetail,
     url: "https://ecommerce-product-alpha.vercel.app/",
   },
@@ -46,7 +46,7 @@ const ImageCard = ({ children, className = "", style }: Props) => {
   return (
     <div
       className={classNames(
-        " rounded-md max-w-md w-full overflow-hidden transform hover:scale-105 transition-transform duration-200  shadow-lg shadow-white",
+        " rounded-md max-w-md w-full overflow-hidden transform hover:scale-105 transition-transform duration-200  shadow-lg shadow-gray-700",
         className
       )}
       style={style}
@@ -59,8 +59,9 @@ const ImageCard = ({ children, className = "", style }: Props) => {
 const MyProjects = () => {
   return (
     <Container
+      id="projects"
       title="My Projects"
-      content="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam"
+      content="All Projects I built and deployed them on vercel"
     >
       {cartItems.map((item) => (
         <a key={item.id} href={item.url}>
@@ -71,9 +72,8 @@ const MyProjects = () => {
               className="w-full h-auto object-cover"
             />
 
-            <div className="px-2 py-1">
+            <div className="px-2 py-2">
               <h2>{item.title}</h2>
-              <h5>{item.category}</h5>
             </div>
           </ImageCard>
         </a>

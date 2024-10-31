@@ -32,6 +32,7 @@ const Card = ({
 const Services = () => {
   return (
     <Container
+      id="services"
       title="Services"
       content=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
         repellat impedit eveniet laudantium ullam est quis quisquam vero culpa"

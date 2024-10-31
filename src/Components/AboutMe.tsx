@@ -1,11 +1,14 @@
 import Logo from "../assets/pic.png";
 const AboutMe = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 p-16 gap-x-4 items-end justify-between">
-      <div className="hidden md:block">
+    <div
+      id="about"
+      className="grid grid-cols-1 md:place-items-center md:grid-cols-2 p-16 w-full"
+    >
+      <div className="hidden md:block max-w-md w-full">
         <img src={Logo} alt="img" className="w-full" />
       </div>
-      <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col gap-y-4 px-8 max-w-md w-full">
         <h1
           style={{ textShadow: "-14px 0px 0px rgba(103,102,102,0.23)" }}
           className="text-6xl font-bold text-gray-200 py-3"

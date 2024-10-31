@@ -20,7 +20,7 @@ interface NavItems {
 }
 
 const navigation = [
-  { id: 1, name: "Home", href: "#home", current: true },
+  { id: 1, name: "Home", href: "/", current: true },
   { id: 2, name: "About", href: "#about", current: false },
   { id: 3, name: "Resume", href: "#resume", current: false },
   { id: 4, name: "Services", href: "#services", current: false },
@@ -155,6 +155,7 @@ const Navbar = () => {
 
               {navigation.map((item) => (
                 <DisclosureButton
+                  key={item.id}
                   as="a"
                   onClick={() => setSelectedItem(item)}
                   href={item.href}

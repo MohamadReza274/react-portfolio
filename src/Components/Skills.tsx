@@ -4,6 +4,7 @@ import ProgressBar from "./ProgressBar";
 const Skills = () => {
   return (
     <Container
+      id="skills"
       title="Skills"
       content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
         repellat impedit eveniet laudantium ullam est quis quisquam vero culpa"

@@ -4,6 +4,7 @@ import Container from "./Container";
 const Resume = () => {
   return (
     <Container
+      id="resume"
       title="Resume"
       content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
         repellendus aspernatur dolores mollitia magnam. Quasi ratione non iure
