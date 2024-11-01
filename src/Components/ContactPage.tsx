@@ -6,14 +6,14 @@ import {
 
 const ContactPage = () => {
   return (
-    <div className="relative isolate  rounded-md" id="contact">
+    <div className="relative isolate rounded-md" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative px-6 pb-8 pt-12 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg ">
             <h2 className="text-3xl font-bold tracking-tight text-gray-200">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8">
+            <p className="mt-6 text-lg leading-8 text-gray-200">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
               Arcu sed malesuada et magna.

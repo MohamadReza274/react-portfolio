@@ -75,18 +75,18 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="" aria-labelledby="footer-heading">
+    <footer className="bg-[rgba(0,0,0,0.6)]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8 ">
         <div className="">
           <ScrollFadeIn delay={0.2}>
             <ContactPage />
           </ScrollFadeIn>
         </div>
 
-        <div className="mt-16 border-t border-gray-500 pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24">
+        <div className=" border-t border-gray-500 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a

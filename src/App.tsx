@@ -8,10 +8,12 @@ import ScrollFadeIn from "./Components/ScrollFadeIn";
 import ScrollToTopButton from "./Components/ScrollUp";
 import Services from "./Components/Services";
 import Skills from "./Components/Skills";
+import AnimationEffect from "./Components/AnimationEffect";
 
 function App() {
   return (
-    <div className="text-white bg-black ">
+    <div className="">
+      <AnimationEffect />
       <Navbar />
       <Header />
       <ScrollFadeIn delay={0.2}>

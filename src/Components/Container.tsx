@@ -5,12 +5,20 @@ interface Props {
   content: string;
   children: ReactNode;
   id?: string;
+  className?: string;
 }
 
-const Container = ({ title, content, children, id }: Props) => {
+const classNames = (...classes: string[]) => {
+  return classes.filter(Boolean).join(" ");
+};
+
+const Container = ({ title, content, children, id, className = "" }: Props) => {
   return (
     <div
-      className="flex items-center px-2 flex-col md:px-32 py-16 gap-y-16 "
+      className={classNames(
+        "flex text-white items-center px-2 flex-col md:px-32 py-16 gap-y-16",
+        className
+      )}
       id={id}
     >
       <h2 className="font-bold text-5xl pb-4">{title}</h2>

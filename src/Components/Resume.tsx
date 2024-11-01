@@ -11,7 +11,7 @@ const Resume = () => {
         distinctio tempore eaque aliquid laudantium. Officiis minima dolores
         nemo enim aliquam nam?"
     >
-      <Card className="bg-[#292929]">
+      <Card className="bg-[rgba(41,41,41,0.7)]">
         <h2 className="text-primary font-bold text-2xl">2006 - 2018</h2>
         <h3 className="text-2xl">High School</h3>
         <h6 className="text-gray-300">Sharak High School Ghor Afghanistan</h6>
@@ -22,7 +22,7 @@ const Resume = () => {
           culpa, voluptates deleniti veniam.
         </p>
       </Card>
-      <Card className="bg-[#292929]">
+      <Card className="bg-[rgba(41,41,41,0.7)]">
         <h2 className="text-primary font-bold text-2xl">2019 - 2023</h2>
         <h3 className="text-2xl">Bachelor's Degree of CS</h3>
         <h6 className="text-gray-300">Herat University Afghanistan</h6>

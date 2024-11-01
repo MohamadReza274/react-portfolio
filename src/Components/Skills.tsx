@@ -4,6 +4,7 @@ import ProgressBar from "./ProgressBar";
 const Skills = () => {
   return (
     <Container
+      className="bg-[rgba(0,0,0,0.6)]"
       id="skills"
       title="Skills"
       content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam

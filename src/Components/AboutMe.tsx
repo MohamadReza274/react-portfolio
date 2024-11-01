@@ -3,7 +3,7 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="grid grid-cols-1 md:place-items-center md:grid-cols-2 p-16 w-full"
+      className="grid grid-cols-1 md:place-items-center md:grid-cols-2 px-0 md:px-16 py-16 w-full"
     >
       <div className="hidden md:block max-w-md w-full">
         <img src={Logo} alt="img" className="w-full" />
@@ -43,8 +43,8 @@ const AboutMe = () => {
             780097590
           </p>
         </div>
-        <p className="text-lg">
-          <span className="text-primary">8</span> Project complete
+        <p className="text-lg text-gray-100">
+          <span className="text-primary">8</span> Project completed
         </p>
         <button className="text-black tracking-widest self-start uppercase rounded-3xl px-4 py-3 bg-primary">
           Download CV

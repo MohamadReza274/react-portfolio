@@ -36,16 +36,18 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState<NavItems>(navigation[0]);
   return (
-    <Disclosure as="nav" className="bg-transparent shadow">
+    <Disclosure as="nav" className="bg-transparent shadow text-white">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="flex h-16 justify-between">
               <div className="flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
-                  <h2 className="text-lg font-semibold">M.Reza</h2>
+                  <h2 className="text-lg text-black z-10 font-semibold">
+                    M Reza
+                  </h2>
                 </div>
-                <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
+                <div className="hidden lg:ml-6 lg:flex lg:space-x-8 z-30">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   {navigation.map((item) => (
                     <a
