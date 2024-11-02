@@ -36,14 +36,14 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState<NavItems>(navigation[0]);
   return (
-    <Disclosure as="nav" className="bg-transparent shadow text-white">
+    <Disclosure as="nav" className="bg-transparent shadow">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="flex h-16 justify-between">
               <div className="flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
-                  <h2 className="text-lg text-black z-10 font-semibold">
+                  <h2 className="text-lg text-white z-10 font-semibold">
                     M Reza
                   </h2>
                 </div>
@@ -151,10 +151,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          <DisclosurePanel className="lg:hidden">
-            <div className="space-y-1 pb-3 pt-2">
+          <DisclosurePanel className="lg:hidden z-20 text-white">
+            <div className="space-y-1 pb-3 pt-2 z-30 text-white">
               {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
-
+              <div className="text-white z-30">Hello</div>
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.id}
@@ -163,9 +163,9 @@ const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.id === selectedItem.id
-                      ? "bg-gray-600 text-gray-200 border-indigo-500"
-                      : "border-transparent text-gray-400 hover:bg-gray-500 hover:border-gray-400 hover:text-gray-800",
-                    "block border-l-4 py-2 pl-3 pr-4 text-base font-medium "
+                      ? "bg-transparent z-30 text-gray-200 border-indigo-500"
+                      : "border-transparent z-30 text-gray-400 hover:bg-gray-500 hover:border-gray-400 hover:text-gray-800",
+                    "block z-30 text-white border-l-4 py-2 pl-3 pr-4 text-base font-medium "
                   )}
                 >
                   {item.name}
